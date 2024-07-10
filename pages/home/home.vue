@@ -87,13 +87,13 @@
         const {
           data: res
         } = await uni.$http.get('/api/public/v1/home/catitems')
-        console.log(res)
+        // console.log(res)
         if (res.meta.status !== 200) return uni.$showMsg()
         this.navList = res.message
       },
       // nav-item 项被点击时候的事件处理函数
       navClickHandler(item) {
-        console.log(item)
+        // console.log(item)
         // 判断点击的是哪个 nav
         if (item.name === '分类') {
           uni.switchTab({
@@ -126,7 +126,9 @@
         // 通过双层 forEach 循环，处理 URL 地址
         res.message.forEach(floor => {
           floor.product_list.forEach(prod => {
+            // console.log(prod);
             prod.url = '/subpkg/goods_list/goods_list?' + prod.navigator_url.split('?')[1]
+            // console.log(prod.url);
           })
         })
         this.floorList = res.message
