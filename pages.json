@@ -20,6 +20,13 @@
       {
         "path": "goods_list/goods_list",
         "style": {}
+      },
+      {
+        "path" : "search/search",
+        "style" : 
+        {
+          "navigationBarTitleText" : ""
+        }
       }
 
     ]
@@ -28,7 +35,10 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马优购",
     "navigationBarBackgroundColor": "#C00000",
-    "backgroundColor": "#FFFFFF"
+    "backgroundColor": "#FFFFFF",
+    "usingComponents": {
+      "my-search": "/components/my-search/my-search"
+    }
   },
   "tabBar": {
     "selectedColor": "#C00000",
