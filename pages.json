@@ -42,7 +42,9 @@
     "usingComponents": {
       "my-search": "/components/my-search/my-search",
       "my-goods": "/components/my-goods/my-goods",
-      "my-address": "/components/my-address/my-address"
+      "my-address": "/components/my-address/my-address",
+      "my-login": "/components/my-login/my-login",
+      "my-userinfo": "/components/my-userinfo/my-userinfo"
     }
   },
   "tabBar": {
