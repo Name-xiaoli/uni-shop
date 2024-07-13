@@ -41,7 +41,8 @@
     "backgroundColor": "#FFFFFF",
     "usingComponents": {
       "my-search": "/components/my-search/my-search",
-      "my-goods": "/components/my-goods/my-goods"
+      "my-goods": "/components/my-goods/my-goods",
+      "my-address": "/components/my-address/my-address"
     }
   },
   "tabBar": {
@@ -71,5 +72,9 @@
         "selectedIconPath": "static/tab_icons/my-active.png"
       }
     ]
-  }
+  },
+
+  "requiredPrivateInfos": [
+    "chooseAddress"
+  ]
 }
